@@ -59,6 +59,17 @@ function shuffle(array) {
     array[random] = temp;
   }
 }
-let array = [1, 2, 3];
-shuffle(array);
-console.log(array)
+
+// Let arr be an array. Create a function unique(arr) that should return an array with unique items of arr.
+function unique(arr) {
+  let unique = arr.filter((value, index, arr) => {
+    if (arr.indexOf(value) === index) {
+      console.log(value)
+      return value;
+    }
+  })
+  return unique;
+}
+let arr = ["Hare", "Krishna", "Hare", "Krishna",
+      "Krishna", "Krishna", "Hare", "Hare", ":-O"]
+unique(arr);
