@@ -34,3 +34,9 @@ function filterRangeInPlace(arr, a, b) {
     }
   }
 }
+
+// Sort an array in decreasing order
+function sortByDecreasingOrder(arr) {
+  const sort = arr.sort((a, b) => b - a)
+  return sort;
+}
