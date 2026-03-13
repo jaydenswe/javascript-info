@@ -49,5 +49,16 @@ function copySorted(arr) {
   console.log(arr)
   return sorted;
 }
-let arr = ["HTML", "JavaScript", "CSS"];
-copySorted(arr);
+
+// Write the function shuffle(array) that shuffles (randomly reorders) elements of the array. Multiple runs of shuffle may lead to different orders of elements.
+function shuffle(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    let random = Math.floor(Math.random() * (array.length - i) + i)
+    let temp = array[i];
+    array[i] = array[random];
+    array[random] = temp;
+  }
+}
+let array = [1, 2, 3];
+shuffle(array);
+console.log(array)
