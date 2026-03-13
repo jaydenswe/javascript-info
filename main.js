@@ -40,3 +40,14 @@ function sortByDecreasingOrder(arr) {
   const sort = arr.sort((a, b) => b - a)
   return sort;
 }
+
+// We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified. Create a function copySorted(arr) that returns such a copy.
+function copySorted(arr) {
+  let sorted = arr.slice();
+  sorted.sort();
+  console.log(sorted)
+  console.log(arr)
+  return sorted;
+}
+let arr = ["HTML", "JavaScript", "CSS"];
+copySorted(arr);
